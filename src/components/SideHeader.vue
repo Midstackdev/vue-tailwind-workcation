@@ -1,6 +1,6 @@
 <template>
-  <header class="bg-gray-900 sm:flex sm:items-center sm:justify-between">
-    <div class="flex justify-between px-4 py-3">
+  <header class="bg-gray-900 sm:flex sm:items-center sm:justify-between xl:bg-white">
+    <div class="flex justify-between px-4 py-3 xl:w-72 xl:bg-gray-900 xl:justify-center xl:py-5">
       <div>
         <svg class="h-10 w-auto" viewBox="0 0 185 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M121.09 28.336c2.352 0 4.392-1.248 5.424-3.12l-2.688-1.536c-.48.984-1.512 1.584-2.76 1.584-1.848 0-3.216-1.368-3.216-3.264 0-1.92 1.368-3.288 3.216-3.288 1.224 0 2.256.624 2.736 1.608l2.664-1.56c-.984-1.848-3.024-3.096-5.376-3.096-3.648 0-6.336 2.76-6.336 6.336 0 3.576 2.688 6.336 6.336 6.336zM137.084 16v1.416c-.864-1.08-2.16-1.752-3.912-1.752-3.192 0-5.832 2.76-5.832 6.336 0 3.576 2.64 6.336 5.832 6.336 1.752 0 3.048-.672 3.912-1.752V28h3.096V16h-3.096zm-3.336 9.384c-1.896 0-3.312-1.368-3.312-3.384s1.416-3.384 3.312-3.384c1.92 0 3.336 1.368 3.336 3.384s-1.416 3.384-3.336 3.384zM149.851 18.976V16h-2.712v-3.36l-3.096.936V16h-2.088v2.976h2.088v4.992c0 3.24 1.464 4.512 5.808 4.032v-2.808c-1.776.096-2.712.072-2.712-1.224v-4.992h2.712zM153.57 14.56c1.056 0 1.92-.864 1.92-1.896s-.864-1.92-1.92-1.92c-1.032 0-1.896.888-1.896 1.92s.864 1.896 1.896 1.896zM152.034 28h3.096V16h-3.096v12zM163.676 28.336c3.528 0 6.36-2.76 6.36-6.336 0-3.576-2.832-6.336-6.36-6.336-3.528 0-6.336 2.76-6.336 6.336 0 3.576 2.808 6.336 6.336 6.336zm0-3.024c-1.824 0-3.24-1.368-3.24-3.312 0-1.944 1.416-3.312 3.24-3.312 1.848 0 3.264 1.368 3.264 3.312 0 1.944-1.416 3.312-3.264 3.312zM178.886 15.664c-1.608 0-2.856.6-3.576 1.68V16h-3.096v12h3.096v-6.48c0-2.088 1.128-2.976 2.64-2.976 1.392 0 2.376.84 2.376 2.472V28h3.096v-7.368c0-3.192-1.992-4.968-4.536-4.968z" fill="#667EEA"/>
@@ -8,8 +8,8 @@
             <path fill-rule="evenodd" clip-rule="evenodd" d="M43.911 12.604L36.213 8.16v20.645h9v2h-44v-2h4v-12.72l-3.728.933L1 15.078l21.09-5.273h3.122a9.552 9.552 0 0 0-.68 2.559l-.483 3.975 5.164-2.982v15.448h5V8.161l-7.696 4.444a7.502 7.502 0 0 1 2.565-4.8h-4.12a7.489 7.489 0 0 1 6.646-2.973l-5.591-3.228a7.488 7.488 0 0 1 6.696.402c1.039.6 1.88 1.41 2.5 2.347a7.461 7.461 0 0 1 2.5-2.347 7.49 7.49 0 0 1 6.698-.402l-5.593 3.228a7.488 7.488 0 0 1 6.646 2.973h-4.12a7.498 7.498 0 0 1 2.567 4.8zM25.213 28.805v-10h-6v10h6zm-11-8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" fill="#667EEA"/>
           </svg>
       </div>
-      <div class="flex"> 
-        <button @click="toggle" type="button" class="px-2 text-gray-500 hover:text-white focus:outline-none focus:text-white sm:hidden">
+      <div class="flex sm:hidden"> 
+        <button @click="toggle" type="button" class="px-2 text-gray-500 hover:text-white focus:outline-none focus:text-white">
           <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
             <path v-if="isOpen" d="M16.24 14.83a1 1 0 0 1-1.41 1.41L12 13.41l-2.83 2.83a1 1 0 0 1-1.41-1.41L10.59 12 7.76 9.17a1 1 0 0 1 1.41-1.41L12 10.59l2.83-2.83a1 1 0 0 1 1.41 1.41L13.41 12l2.83 2.83z"/>
             <path v-else d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
@@ -17,21 +17,37 @@
         </button>
       </div>
     </div>
-    <nav class="sm:flex sm:items-center sm:px-4" :class="{'hidden': !isOpen, 'block': isOpen}">
-      <div class="px-2 pb-5 pt-2 border-b border-gray-800 sm:flex sm:border-b-0 sm:py-0 sm:px-0">
-        <a href="#" class="block px-3 py-1 rounded font-semibold text-white hover:bg-gray-700 sm:text-sm sm:px-2">List your property</a>
-        <a href="#" class="mt-3 sm:mt-0 block px-3 py-1 rounded font-semibold text-white hover:bg-gray-700 sm:text-sm sm:px-2 sm:ml-2">Trips</a>
-        <a href="#" class="mt-3 sm:mt-0 block px-3 py-1 rounded font-semibold text-white hover:bg-gray-700 sm:text-sm sm:px-2 sm:ml-2">Messages</a>
-      </div>
-      <div class="px-5 py-5 sm:py-0 sm:ml-4 sm:px-0">
-        <div class="flex items-center">
-          <img class="h-10 w-10 object-cover rounded-full border-2 border-gray-600 sm:h-8 sm:w-8" src="https://images.unsplash.com/photo-1598635239935-2d037ba3819c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&q=80" alt="">
-          <span class="ml-4 text-gray-200 font-semibold sm:hidden">Isla Tamakloe</span>
+    <nav class="sm:flex sm:items-center sm:px-4 xl:flex-1 xl:justify-between" :class="{'hidden': !isOpen, 'block': isOpen}">
+
+      <div class="hidden xl:block xl:relative xl:max-w-xs xl:w-full">
+        <div class="absolute inset-y-0 left-0 flex items-center pl-3">
+          <svg class="h-6 w-6 fill-current text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"/></svg>
         </div>
-        <div class="mt-5 sm:hidden">
-          <a href="#" class="block text-gray-400">Account Settings</a>
-          <a href="#" class="mt-3 block text-gray-400">Support</a>
-          <a href="#" class="mt-3 block text-gray-400">Sign out</a>
+        <input class="block w-full bg-gray-300 border border-transparent text-gray-900 rounded-lg pl-10 pr-4 py-3 focus:outline-none focus:bg-white focus:text-gray-500 focus:border-gray-300" placeholder="Search by keywords">
+      </div>
+
+      <div class="sm:flex sm:items-center">
+        <div class="px-2 pb-5 pt-2 border-b border-gray-800 sm:flex sm:border-b-0 sm:py-0 sm:px-0">
+          <a href="#" class="block px-3 py-1 rounded font-semibold text-white hover:bg-gray-700 sm:text-sm sm:px-2 xl:text-gray-900">
+            List your property
+          </a>
+          <a href="#" class="mt-3 sm:mt-0 block px-3 py-1 rounded font-semibold text-white hover:bg-gray-700 sm:text-sm sm:px-2 sm:ml-2 xl:text-gray-900">
+            Trips
+          </a>
+          <a href="#" class="mt-3 sm:mt-0 block px-3 py-1 rounded font-semibold text-white hover:bg-gray-700 sm:text-sm sm:px-2 sm:ml-2 xl:text-gray-900">
+            Messages
+          </a>
+        </div>
+        <div class="px-5 py-5 sm:py-0 sm:ml-4 sm:px-0">
+          <div class="flex items-center">
+            <img class="h-10 w-10 object-cover rounded-full border-2 border-gray-600 sm:h-8 sm:w-8 xl:border-gray-300" src="https://images.unsplash.com/photo-1598635239935-2d037ba3819c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&q=80" alt="">
+            <span class="ml-4 text-gray-200 font-semibold sm:hidden">Isla Tamakloe</span>
+          </div>
+          <div class="mt-5 sm:hidden">
+            <a href="#" class="block text-gray-400">Account Settings</a>
+            <a href="#" class="mt-3 block text-gray-400">Support</a>
+            <a href="#" class="mt-3 block text-gray-400">Sign out</a>
+          </div>
         </div>
       </div>
     </nav>
