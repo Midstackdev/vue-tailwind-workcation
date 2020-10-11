@@ -10,7 +10,7 @@
         </div>
         <div class="mt-6 sm:overflow-x-auto">
           <div class="px-4 sm:inline-flex sm:-mx-2 sm:pb-8">
-            <div v-for="(property, index) in properties" :key="index" :class="{'mt-10': property > 1}" class="sm:mt-0 sm:w-80 sm:flex-shrink-0 sm:px-2">
+            <div v-for="(property, index) in properties" :key="index" :class="{'mt-10 sm:ml-4': index > 0}" class="sm:mt-0 sm:w-80 sm:flex-shrink-0 sm:px-2">
               <PropertyCard :property="property" />
             </div>
           </div>
