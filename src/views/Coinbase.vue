@@ -4,7 +4,7 @@
       <TopNav />
       <SecondNav />
       <DisplayChart />
-
+      <DisplayCards />
       
     </div>
   </div>
@@ -14,12 +14,14 @@
   import TopNav from '@/components/coinbase/TopNav'
   import SecondNav from '@/components/coinbase/SecondNav'
   import DisplayChart from '@/components/coinbase/DisplayChart'
+  import DisplayCards from '@/components/coinbase/DisplayCards'
   
   export default {
     components: {
       TopNav,
       SecondNav,
       DisplayChart,
+      DisplayCards,
     }
   }
 </script>
