@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Dashboard from '../views/Dashboard.vue'
 import Coinbase from '../views/Coinbase.vue'
+import Inbox from '../views/Inbox.vue'
 
 Vue.use(VueRouter)
 
@@ -21,6 +22,11 @@ Vue.use(VueRouter)
     path: '/coinbase',
     name: 'cionbase',
     component: Coinbase
+  },
+  {
+    path: '/inbox',
+    name: 'inbox',
+    component: Inbox
   }
 ]
 
