@@ -1,5 +1,5 @@
 <template>
-  <header class="flex">
+  <header class="flex flex-shrink-0">
     <div class="w-64 flex-shrink-0 px-4 py-3 bg-gray-800">
       <button class="block w-full flex items-center">
         <img 
