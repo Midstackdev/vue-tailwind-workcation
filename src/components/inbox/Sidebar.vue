@@ -1,5 +1,5 @@
 <template>
-  <div class="w-64 p-6 bg-gray-100">
+  <div class="w-64 p-6 bg-gray-100 overflow-y-auto">
     <nav>
       <h2 class="text-xs font-semibold text-gray-600 uppercase tracking-wide">Mailboxes</h2>
       <div class="mt-3">
