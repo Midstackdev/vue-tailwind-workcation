@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Dashboard from '../views/Dashboard.vue'
 import Coinbase from '../views/Coinbase.vue'
 import Inbox from '../views/Inbox.vue'
+import TuplesPricing from '../views/TuplesPricing.vue'
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,11 @@ Vue.use(VueRouter)
     path: '/inbox',
     name: 'inbox',
     component: Inbox
+  },
+  {
+    path: '/price',
+    name: 'price',
+    component: TuplesPricing
   }
 ]
 

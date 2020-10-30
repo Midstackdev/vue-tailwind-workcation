@@ -12,6 +12,12 @@ module.exports = {
       },
       padding: {
         '5/6': '83.333333%'
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif']
+      },
+      fontSize: {
+        '7xl': '5.125rem'
       }
     },
     customForms: theme => ({
