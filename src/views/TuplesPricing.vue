@@ -13,8 +13,8 @@
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam molestias, rem eum quas debitis nostrum cupiditate vero accusamus.
       </p>
       <Cards/>
-      <Slices />
     </main>
+    <Slices />
     <Testimonial />
   </div>
 </template>
