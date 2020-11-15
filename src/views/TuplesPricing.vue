@@ -1,7 +1,7 @@
 <template>
   <div class="bg-gray-200">
     <Header />
-    <main class="px-4 pt-4">
+    <main class="max-w-xs mx-auto px-4 pt-4">
       <h1 class="max-w-xs mx-auto text-center text-2xl font-bold leading-snug text-gray-900">
         <span class="relative text-white">
           <span aria-hidden class="absolute inset-0 bg-indigo-600" style="transform: skewY(-.5deg) scaleX(1.05)"></span>

@@ -1,5 +1,5 @@
 <template>
-  <header class="flex justify-between items-center px-4 py-6">
+  <header class="max-w-xs mx-auto flex justify-between items-center px-4 py-6">
     <div>
       <img src="@/assets/svg/tuples-logo.svg" alt="Tuples">
     </div>

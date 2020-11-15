@@ -1,5 +1,5 @@
 <template>
-  <section class="mt-16">
+  <section class="max-w-xs mx-auto mt-16">
     <div class="px-4">
       <h2 class="text-2xl font-bold text-center text-gray-900">Your tuple license explianed</h2>
       <p class="mt-4 text-center text-gray-700">
