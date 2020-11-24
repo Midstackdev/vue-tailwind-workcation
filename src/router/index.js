@@ -5,6 +5,7 @@ import Dashboard from '../views/Dashboard.vue'
 import Coinbase from '../views/Coinbase.vue'
 import Inbox from '../views/Inbox.vue'
 import TuplesPricing from '../views/TuplesPricing.vue'
+import Kaban from '../views/Kaban.vue'
 
 Vue.use(VueRouter)
 
@@ -33,6 +34,11 @@ Vue.use(VueRouter)
     path: '/price',
     name: 'price',
     component: TuplesPricing
+  },
+  {
+    path: '/kaban',
+    name: 'kaban',
+    component: Kaban
   }
 ]
 
