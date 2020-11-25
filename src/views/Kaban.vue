@@ -5,7 +5,7 @@
             <SideBar />
         </div>
         <div class="flex-1 min-w-0 bg-white">
-            <div class="border-b-2 border-gray-200"></div>
+            <NavBar />
             <div></div>
         </div>
     </div>
@@ -13,10 +13,12 @@
 
 <script>
     import SideBar from '@/components/kaban/SideBar'
+    import NavBar from '@/components/kaban/NavBar'
 
     export default {
         components: {
-            SideBar
+            SideBar,
+            NavBar
         }
     }
 </script>
