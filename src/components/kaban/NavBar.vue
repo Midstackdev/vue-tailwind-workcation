@@ -2,8 +2,13 @@
     <div class="border-b-2 border-gray-200">
         <header class="px-6">
             <div class="py-3 flex justify-between items-center border-b border-gray-200">
-                <div class="flex-1">
-                    <div class="relative w-64">
+                <div class="flex flex-1">
+                    <button class="text-gray-600 focus:outline-none lg:hidden" @click="$emit('open', false)">
+                        <svg class="h-6 w-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path class="heroicon-ui" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                        </svg>
+                    </button>
+                    <div class="ml-3 relative w-64 lg:ml-0">
                         <span class="absolute inset-y-0 left-0 pl-3 flex items-center">
                             <svg class="h-6 w-6 text-gray-600" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                                 <path d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"/>
@@ -73,3 +78,10 @@
         </header>
     </div>
 </template>
+
+<script>
+    
+    export default {
+
+    }
+</script>
